@@ -1,0 +1,35 @@
+<div class="header isHome">
+  <ul class="navul" style="text-shadow:2px 2px 2px black; list-style:none;">
+    <div class="logo" style="padding-left:30px;margin-bottom:-20px;">
+      <%= image_tag ("felice2-01.png"), size:'150x150' %>
+    </div>
+    <li style='display:inline;'><%= link_to 'MAIN PAGE', root_path, class: "nav nav-rest", style:"text-decoration:none;color:white;" %></li>
+    <li style='display:inline;'><%= link_to 'ABOUT', about_path, id:"about_button", class: "nav-rest nav", style:"text-decoration:none;color:white;" %></li>
+    <li  style='display:inline;'><%= link_to 'COLLECTIONS', '#', style:"text-decoration:none;color:white;",id:"collections_button", class: "nav-rest nav", style:"text-decoration:none;color:white;" %></li>
+    <li style='display:inline;'><%= link_to 'JEWELRY', '#', style:"text-decoration:none;color:white;",id:"jewelry_button", class: "nav-rest nav", style:"text-decoration:none;color:white;" %></li>
+    <li style='display:inline;'><%= link_to 'STYLE', '#', style:"text-decoration:none;color:white;",id:"style_button", class: "nav-rest nav", style:"text-decoration:none;color:white;" %></li>
+    <li style='display:inline;'><%= link_to 'CONTACT', '#', style:"text-decoration:none;color:white;",id:"style_button", class: "nav-rest nav", style:"text-decoration:none;color:white;" %></li>
+  </ul>
+  <ul class="navul-icon">
+    <div class="icon-space">
+      <li class="nav-icon">
+        <i class="fa fa-facebook icon"></i>
+      </li>
+    </div>
+    <div class="icon-space">
+      <li class="nav-icon">
+        <i class="fa fa-twitter icon"></i>
+      </li>
+    </div>
+    <div class="icon-space">
+      <li class="nav-icon">
+        <i class="fa fa-google icon"></i>
+      </li>
+    </div>
+    <div class="icon-space">
+      <li class="nav-icon">
+        <i class="fa fa-rss icon"></i>
+      </li>
+    </div>
+  </ul>
+</div>
