@@ -15,7 +15,10 @@
 
 html{-webkit-font-smoothing: antialiased;}
 
-body{margin:0;}
+body {
+  margin: 0;
+  background: #ffb3bf;
+}
 
 #cube{
   transition: transform 1s;
@@ -707,7 +710,7 @@ body{margin:0;}
 
 .contact{
   width: 100%;
-  height: 100vh;
+  height: auto;
   top: 0;
   left: 0;
   background: #ffb3bf;
@@ -716,16 +719,23 @@ body{margin:0;}
 .spacing {
   margin-right: 10px;
   overflow: hidden;
+
+  .footer {
+    height:45vh;
+  }
 }
 
 .map-frame {
-  margin-top: 80px;
-  margin-bottom: 10px;
+  .map {
+    width: 100%;
+    height: 85vh;
+    margin-top: 15vh;
+  }
 }
 
 .top-right{
-  width: 50vw;
-  height: 50vh;
+  width: 100%;
+  height: 45vh;
   position: relative;
 
   > p {

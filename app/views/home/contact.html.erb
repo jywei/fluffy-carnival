@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <!-- <div class="map" id="map" style='position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;'></div> -->
         <div class="map-frame">
-          <div class="map" id="map" style='width: 100%; height: 600px;'></div>
+          <div class="map" id="map"></div>
         </div>
       </div>
       <div class="col-md-6">
@@ -58,10 +58,12 @@
     });
 
     // Create a marker and set its position.
+    var image = 'https://cdn4.iconfinder.com/data/icons/flat-icon-set/2133/flat_icons-graficheria.it-01.png'
     var marker = new google.maps.Marker({
       map: map,
       position: myLatLng,
-      title: 'Hello World!'
+      title: 'Hello World!',
+      icon: image
     });
 
     map.mapTypes.set('map_style', styledMap);
