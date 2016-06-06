@@ -4,7 +4,7 @@
     <!-- <figure class="front" style="width:100%;height:100%;"> -->
       <div class="container-fluid about_pic center">
         <p>WHAT A STORY</p>
-        <div>
+        <div id="findoutmore_button">
           <p>FIND OUT MORE</p>
           <i class="fa fa-long-arrow-down arrowdown"></i>
           <div class="circle_holder">
@@ -12,7 +12,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid paddingzero" style="overflow:hidden;">
+      <div class="container-fluid paddingzero" id="about_content" style="overflow:hidden;">
         <div class="pink_background">
           <div class="row">
             <div class="col-md-6 center box_bottom_zero paddingzero">
@@ -145,6 +145,11 @@
 </div>
 
 <script>
+  $('#findoutmore_button').click(function(){
+    $('html,body').animate({
+      scrollTop: $('#about_content').offset().top
+    },1000);
+  });
   $(window).scroll(function(){
     var windowtop    = $(window).scrollTop();
     var windowbottom = $(window).scrollTop() + $(window).height();
