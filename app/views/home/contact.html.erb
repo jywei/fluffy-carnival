@@ -26,7 +26,7 @@
     var styles = [
       {
         stylers: [
-          { hue: "#00ffe6" },
+          { hue: "#ffb3bf" },
           { saturation: -20 }
         ]
       },{
@@ -48,7 +48,7 @@
     var styledMap = new google.maps.StyledMapType(styles,
     {name: "Styled Map"});
 
-    var myLatLng = {lat: 25.051415, lng: 121.5147723};
+    var myLatLng = {lat: 25.0511817, lng: 121.5179373};
 
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -57,11 +57,20 @@
       zoom: 17
     });
 
+    var image = {
+      url: 'assets/felice2-01.png',
+      size: new google.maps.Size(100, 100),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(0, 0),
+      scaledSize: new google.maps.Size(60, 60)
+    };
+
     // Create a marker and set its position.
     var marker = new google.maps.Marker({
       map: map,
       position: myLatLng,
-      title: 'Hello World!'
+      title: 'Hello World!',
+      icon: image
     });
 
     map.mapTypes.set('map_style', styledMap);
