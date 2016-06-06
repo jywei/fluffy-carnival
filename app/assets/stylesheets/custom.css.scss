@@ -1,7 +1,7 @@
-@import "bootstrap-sprockets";
+/*@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
-@import "font-awesome";
+@import "font-awesome";*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 
 @font-face{
@@ -774,6 +774,7 @@ body {
 }
 
 .map-frame {
+  margin-top: -20px;
   .map {
     width: 100%;
     height: 85vh;
@@ -914,3 +915,83 @@ body {
        opacity:1;
        filter:alpha(opacity=100)}
 }
+
+.title {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  .big {
+    position: absolute;
+    margin: 0;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  .small {
+    position: absolute;
+    margin: 0;
+    top: 37%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+.products {
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*background: #ffe6ea;*/
+  background: #ffb3bf;
+  /*background: #ffffff;*/
+
+}
+
+.nav-btn {
+  /*margin-left: 18px;*/
+  margin-top: 20px;
+}
+
+.nav-btn > li > a {
+  transition: .5s;
+  margin-bottom: 10px;
+  font-weight: 700;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #808080;
+  border-radius: 0px !important;
+  border-color: transparent;
+  margin: 0px;
+}
+
+.nav-btn > li > a:hover {
+  background-color: #8c8c8c !important;
+  color: white !important;
+  border-color: transparent;
+}
+
+.product-tag {
+  margin-top: 80px;
+}
+
+.product-listing {
+  margin-left: -40px;
+}
+
+.jumbotron {
+  background: url('TiffanyBows1.jpg');
+  height: 300px;
+  background-size: cover;
+}
+
