@@ -22,6 +22,32 @@
 
 <script language="javascript" type="text/javascript">
   function initMap() {
+
+    var styles = [
+      {
+        stylers: [
+          { hue: "#00ffe6" },
+          { saturation: -20 }
+        ]
+      },{
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          { lightness: 100 },
+          { visibility: "simplified" }
+        ]
+      },{
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+          { visibility: "off" }
+        ]
+      }
+    ];
+
+    var styledMap = new google.maps.StyledMapType(styles,
+    {name: "Styled Map"});
+
     var myLatLng = {lat: 25.051415, lng: 121.5147723};
 
     // Create a map object and specify the DOM element for display.
@@ -37,5 +63,8 @@
       position: myLatLng,
       title: 'Hello World!'
     });
+
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
   }
 </script>
