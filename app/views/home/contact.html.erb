@@ -48,7 +48,7 @@
     var styledMap = new google.maps.StyledMapType(styles,
     {name: "Styled Map"});
 
-    var myLatLng = {lat: 25.0511817, lng: 121.5179373};
+    var myLatLng = {lat: 25.0514709, lng: 121.5170881};
 
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -61,12 +61,11 @@
       url: 'assets/felice2-01.png',
       size: new google.maps.Size(100, 100),
       origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(0, 0),
-      scaledSize: new google.maps.Size(60, 60)
+      anchor: new google.maps.Point(50, 50),
+      scaledSize: new google.maps.Size(100, 100)
     };
 
     // Create a marker and set its position.
-    var image = 'https://cdn4.iconfinder.com/data/icons/flat-icon-set/2133/flat_icons-graficheria.it-01.png'
     var marker = new google.maps.Marker({
       map: map,
       position: myLatLng,
