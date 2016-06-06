@@ -1,25 +1,74 @@
-<div class="iconbutton" style="z-index:100;width:100px;height:100px;right:10px;top:10px;position:absolute;opacity:0.7;">
-  <%= image_tag 'felice-pink.png', style:"width:100px;height:100px;background:#b24747;opcaity:1 !important;" %>
+<div class="iconbar">
+  <% if !current_page?(root_path) %>
+    <div class="iconbutton">
+      <div class="felice">
+        <%= image_tag ('FELICE123-01.png'), size: '233x31' %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="bar-top">
+    <!-- <p id="monitor" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p>
+    <p id="monitorbottom" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p>
+    <p id="monitorpicheight" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p>
+    <p id="monitorpicoffsettop" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p>
+    <p id="monitorpicoffsetbottom" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p> -->
+    </div>
+  <div class="bar-left"></div>
+  <div class="bar-right"></div>
+  <div class="bar-bottom"></div>
+
+  <% if !current_page?(root_path) %>
+    <div class="menu-box">
+      <div class="menu-black-box"></div>
+      <div class="menu-list">
+        <%#= image_tag "watermark.png" ,class:"watermark" %>
+        <h2><%= link_to 'MAIN PAGE', root_path %></h2>
+        <h2><%= link_to 'ABOUT','#' %></h2>
+        <h2><%= link_to 'JEWELRY','#' %></h2>
+        <h2><%= link_to 'GEM','#' %></h2>
+        <h2><%= link_to 'EMERALD','#' %></h2>
+        <h2><%= link_to 'CONTACTS','#' %></h2>
+      </div>
+      <div class="watermark"></div>
+    </div>
+  <% end %>
+
 </div>
-
-<div class="bar-top" style="background-color: #ff6666; height: 10px; width: 100%;position:fixed;z-index:10;"></div>
-<div class="bar-left" style="background-color: #ff6666; height: 100%; width: 10px;position:fixed;z-index:10;"></div>
-<div class="bar-right" style="background-color: #ff6666; height: 100%; width: 10px;position:fixed;right:0px;z-index:10;"></div>
-<div class="bar-bottom" style="background-color: #ff6666; height: 10px; width: 100%;position:fixed;bottom:0px;z-index:10;"></div>
-
-<div class="menu-list">
-  <h2><%= link_to 'MAIN PAGE','#' %></h2>
-  <h2><%= link_to 'ABOUT','#' %></h2>
-  <h2><%= link_to 'COLLECTIONS','#' %></h2>
-  <h2><%= link_to 'JEWELRY','#' %></h2>
-  <h2><%= link_to 'STYLE','#' %></h2>
-  <h2><%= link_to 'CONTACTS','#' %></h2>
-</div>
-
 
 <script type="text/javascript">
-  $('.iconbutton').click(function() {
-    $('.menu-list').toggleClass('menu-active');
-    $('.menu').toggleClass('active');
+  // var top = $(window).scrollTop();
+  // var ef="yhhf"
+  $(window).bind('scroll',function(){
+    var windowtop    = $(window).scrollTop();
+    var windowbottom = $(window).scrollTop() + $(window).height();
+    var targettop = $('.ee').offset().top;
+    var targetbottom = $('.ee').offset().top + $('.ee').height();
+    // $('#monitor').text($(window))
+    $('#monitor').text($(window).scrollTop());
+    $('#monitorbottom').text(windowbottom);
+    $('#monitorpicheight').text($('.ee').height());
+    $('#monitorpicoffsettop').text(targettop);
+    $('#monitorpicoffsetbottom').text(targetbottom);
+  });
+
+  // alert($(window).scrollTop());
+  var menutoggle = false
+  $('.iconbutton').click(function(){
+    if(menutoggle == false){
+      menutoggle = true;
+      $('.menu-box').show(0,function(){
+        $('.menu-list').addClass('menu-list-active');
+        $('.watermark').addClass('watermark-active');
+        $('.menu-black-box').addClass('menu-blackbox-active');
+      });
+    }
+    else {
+      menutoggle = false;
+      $('.menu-list').removeClass('menu-list-active');
+      $('.watermark').removeClass('watermark-active');
+      $('.menu-black-box').removeClass('menu-blackbox-active');
+      setTimeout(function(){$('.menu-box').hide(0);},500);
+    }
   });
 </script>
