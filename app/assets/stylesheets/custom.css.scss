@@ -1019,3 +1019,17 @@ body {
   }
 }
 
+.product-box {
+  height: 130px;
+  width: auto;
+  background-color: #ffffff;
+  margin-top: 3px;
+
+  .image {
+    margin: 5px;
+  }
+
+  .box-wording > p {
+    margin: 5px;
+  }
+}
