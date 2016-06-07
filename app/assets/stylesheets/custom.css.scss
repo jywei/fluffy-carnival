@@ -385,7 +385,7 @@ body {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     top: 0;
-}
+  }
 
   .watermark-active {
     opacity: .4;
@@ -720,8 +720,8 @@ body {
 }
 
 .paddingzero {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .felice {
