@@ -1182,20 +1182,22 @@ body {
   border-radius: 0px !important;
   border-color: transparent;
   margin: 0px;
+  box-shadow: 2px 2px 1px #cccccc;
 }
 
 .nav-btn > li > a:hover {
   background-color: #8c8c8c !important;
   color: white !important;
   border-color: transparent;
+  box-shadow: 2px 2px 1px #333333;
 }
 
 .product-tag {
-  margin-top: 80px;
+  /*margin-top: 73px;*/
 }
 
 .product_holder{
-  margin-top: 8px;
+
   .product-listing {
     margin-left: -40px;
 
@@ -1216,6 +1218,7 @@ body {
 .sort_by {
   text-align: right;
   padding-right: 30px;
+  line-height: 50px;
 }
 
 .jumbotron {
@@ -1225,6 +1228,8 @@ body {
 }
 
 .tag {
+  margin-top: 20px;
+
   .nav-btn {
     transition: .5s;
     margin-bottom: 10px;
@@ -1235,20 +1240,25 @@ body {
     border-radius: 0px !important;
     border-color: transparent;
     margin: 0px;
+    box-shadow: 2px 2px 1px #cccccc;
   }
 
   .nav-btn:hover {
     background-color: #8c8c8c !important;
     color: white !important;
     border-color: transparent;
+    box-shadow: 2px 2px 1px #333333;
   }
 }
 
 .product-box {
   height: 130px;
   width: auto;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  color: #808080;
   margin-top: 3px;
+  transition: .5s;
+  box-shadow: 2px 2px 1px #cccccc;
 
   .image {
     margin: 5px;
@@ -1259,8 +1269,54 @@ body {
   }
 }
 
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.product-box:hover {
+  background-color: #8c8c8c !important;
+  color: white !important;
+  border-color: transparent;
+  box-shadow: 2px 2px 1px #333333;
+}
+
+.hr {
   margin-left: -40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 1px solid #ffcccc;
+}
+
+.product_big_box {
+  max-height: 500px;
+  height: 100%;
+  max-width: 270px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 5px;
+
+  .image-big {
+    margin: 5px;
+  }
+
+  .nav-btn {
+    transition: .5s;
+    margin-bottom: 10px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #808080;
+    border-radius: 0px !important;
+    border-color: transparent;
+    margin: 5px;
+    box-shadow: 2px 2px 1px #cccccc;
+  }
+
+  .nav-btn:hover {
+    background-color: #8c8c8c !important;
+    color: white !important;
+    border-color: transparent;
+    box-shadow: 2px 2px 1px #333333;
+  }
+}
+
+.gray {
+  opacity: 0.5;
 }
