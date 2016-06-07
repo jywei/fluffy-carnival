@@ -1009,20 +1009,22 @@ body {
   border-radius: 0px !important;
   border-color: transparent;
   margin: 0px;
+  box-shadow: 2px 2px 1px #cccccc;
 }
 
 .nav-btn > li > a:hover {
   background-color: #8c8c8c !important;
   color: white !important;
   border-color: transparent;
+  box-shadow: 2px 2px 1px #333333;
 }
 
 .product-tag {
-  margin-top: 73px;
+  /*margin-top: 73px;*/
 }
 
 .product_holder{
-  margin-top: 8px;
+
   .product-listing {
     margin-left: -40px;
 
@@ -1053,7 +1055,7 @@ body {
 }
 
 .tag {
-  margin-top: 18px;
+  margin-top: 20px;
 
   .nav-btn {
     transition: .5s;
@@ -1065,12 +1067,14 @@ body {
     border-radius: 0px !important;
     border-color: transparent;
     margin: 0px;
+    box-shadow: 2px 2px 1px #cccccc;
   }
 
   .nav-btn:hover {
     background-color: #8c8c8c !important;
     color: white !important;
     border-color: transparent;
+    box-shadow: 2px 2px 1px #333333;
   }
 }
 
@@ -1117,14 +1121,16 @@ body {
     font-size: 14px;
     color: #808080;
     border-radius: 0px !important;
-    border-color: #e6e6e6;
+    border-color: transparent;
     margin: 5px;
+    box-shadow: 2px 2px 1px #cccccc;
   }
 
   .nav-btn:hover {
     background-color: #8c8c8c !important;
     color: white !important;
     border-color: transparent;
+    box-shadow: 2px 2px 1px #333333;
   }
 }
 
