@@ -45,7 +45,7 @@
         </div>
         <br>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 product_holder">
         <div class="row">
           <div class="product-listing">
             <h3 class="product-tag">PRODUCTS</h3>
@@ -58,9 +58,17 @@
               <button type="button" class="btn btn-default nav-btn">Choice3</button>
             </p>
           </div>
-          <div class="product-listing">
-            <p class="">Sort By</p>
+          <hr>
+          <div class="product-listing sort_by">
+            <p class="sortby">Sort By</p>
+            <select class="form-control sortselect" name="post[person_id]">
+              <option value="" selected="selected">None</option>
+              <option value="1">David</option>
+              <option value="2">Sam</option>
+              <option value="3">Tobias</option>
+            </select>
           </div>
+          <hr>
         </div>
       </div>
     </div>
