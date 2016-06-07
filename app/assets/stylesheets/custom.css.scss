@@ -1004,7 +1004,7 @@ body {
 }
 
 .product-tag {
-  margin-top: 80px;
+  margin-top: 73px;
 }
 
 .product_holder{
@@ -1029,6 +1029,7 @@ body {
 .sort_by {
   text-align: right;
   padding-right: 30px;
+  line-height: 50px;
 }
 
 .jumbotron {
@@ -1038,6 +1039,8 @@ body {
 }
 
 .tag {
+  margin-top: 18px;
+
   .nav-btn {
     transition: .5s;
     margin-bottom: 10px;
@@ -1072,8 +1075,45 @@ body {
   }
 }
 
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.hr {
   margin-left: -40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 1px solid #ffcccc;
+}
+
+.product_big_box {
+  max-height: 500px;
+  height: 100%;
+  max-width: 270px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 5px;
+
+  .image-big {
+    margin: 5px;
+  }
+
+  .nav-btn {
+    transition: .5s;
+    margin-bottom: 10px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #808080;
+    border-radius: 0px !important;
+    border-color: #e6e6e6;
+    margin: 5px;
+  }
+
+  .nav-btn:hover {
+    background-color: #8c8c8c !important;
+    color: white !important;
+    border-color: transparent;
+  }
+}
+
+.gray {
+  opacity: 0.5;
 }
