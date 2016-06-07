@@ -537,7 +537,7 @@ body {
         border-width: 4px 5px 0 4px;
         position: absolute;
         content: "";
-        top: 55px;
+        top: 52px;
       }
     }
 
@@ -569,9 +569,16 @@ body {
 
       &:hover {
         .arrowdown {
-          -moz-animation: arrowmovedown .5s;
-          -webkit-animation: arrowmovedown .5s;
-          animation: arrowmovedown .5s;
+          &:before {
+            -moz-animation: arrowmovedown .5s;
+            -webkit-animation: arrowmovedown .5s;
+            animation: arrowmovedown .5s;
+          }
+          &:after {
+            -moz-animation: arrowmovedown .5s;
+            -webkit-animation: arrowmovedown .5s;
+            animation: arrowmovedown .5s;
+          }
         }
 
         .circle_holder {
@@ -592,9 +599,16 @@ body {
       }
 
       .arrowdown {
-        -moz-animation: arrowmovedup .5s;
-        -webkit-animation: arrowmoveup .5s;
-        animation: arrowmoveup .5s;
+        &:before {
+          -moz-animation: arrowmovedup .5s;
+          -webkit-animation: arrowmoveup .5s;
+          animation: arrowmoveup .5s;
+        }
+        &:after {
+          -moz-animation: arrowmovedup .5s;
+          -webkit-animation: arrowmoveup .5s;
+          animation: arrowmoveup .5s;
+        }
       }
 
       .circle_holder {
