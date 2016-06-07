@@ -86,7 +86,7 @@
         </div>
         <br>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 product_holder">
         <div class="row">
           <div class="product-listing">
             <h3 class="product-tag">PRODUCTS</h3>
@@ -99,20 +99,17 @@
               <button type="button" class="btn btn-default nav-btn">Choice3</button>
             </p>
           </div>
-          <div class="product-listing">
-            <p class="">Sort By
-              <!-- <select name="sort_by" id="sort_by" class="sort-by form-control">
-                <option value="manual">Featured</option>
-                <option value="best-selling">Best Selling</option>
-                <option value="title-ascending">Name: A-Z</option>
-                <option value="title-descending">Name: Z-A</option>
-                <option value="price-ascending">Price: Low to High</option>
-                <option value="price-descending">Price: High to Low</option>
-                <option value="created-ascending">Oldest to Newest</option>
-                <option value="created-descending">Newest to Oldest</option>
-              </select> -->
-            </p>
+          <hr>
+          <div class="product-listing sort_by">
+            <p class="sortby">Sort By</p>
+            <select class="form-control sortselect" name="post[person_id]">
+              <option value="" selected="selected">None</option>
+              <option value="1">David</option>
+              <option value="2">Sam</option>
+              <option value="3">Tobias</option>
+            </select>
           </div>
+          <hr>
         </div>
       </div>
     </div>
