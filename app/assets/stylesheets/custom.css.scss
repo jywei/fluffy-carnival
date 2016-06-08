@@ -383,7 +383,7 @@ body {
 
           .circle {
             overflow: hidden;
-            width: 100px;
+            width: 95px;
             height: 35px;
             position: absolute;
             top: 0;
@@ -422,7 +422,7 @@ body {
         }
 
         .rightborder:before {
-          left: 89px;
+          left: 85px;
           -moz-animation: arrowmoveleft .5s;
           -webkit-animation: arrowmoveleft .5s;
           animation: arrowmoveleft .5s;
