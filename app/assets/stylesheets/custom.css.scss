@@ -1235,6 +1235,10 @@ body {
   .product-listing {
     margin-left: -40px;
 
+    .active {
+      opacity: 1;
+    }
+
     .sortby {
       font-family: serif;
       display: inline;
@@ -1326,6 +1330,8 @@ body {
   background-color: #ffffff;
   margin: 5px;
   text-align: center;
+  opacity: 0;
+  transition: 1.5s;
 
   .image-big {
     margin: 5px;
