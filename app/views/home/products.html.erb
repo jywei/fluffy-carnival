@@ -4,6 +4,13 @@
     <div class="title">
       <p class="big">FELICE JEWELRY</p>
       <p class="small">Online Store</p>
+      <div id="findoutmore_button">
+        <p>FIND OUT MORE</p>
+        <span class="arrow arrowdown"></span>
+        <div class="circle_holder">
+          <div class="circle"></div>
+        </div>
+      </div>
     </div>
     <!-- <div class="jumbotron jumbotron-fluid">
       <div class="container jumbo-pic">
@@ -12,7 +19,7 @@
       </div>
     </div> -->
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid content">
     <div class="row">
       <div class="col-md-4">
         <!-- <br>
@@ -195,6 +202,11 @@
 </div>
 
 <script>
+  $('#findoutmore_button').click(function(){
+    $('html,body').animate({
+      scrollTop: $('.content').offset().top - $('.navicon').height()
+    },1000);
+  });
   $(window).scroll(function(){
     if($(window).scrollTop() + $('.navicon').height() > $(window).height()){
       $('.navicon').addClass('active');
