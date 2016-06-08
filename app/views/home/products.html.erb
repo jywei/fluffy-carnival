@@ -193,3 +193,14 @@
   </div>
   <%= render "layouts/footer" %>
 </div>
+
+<script>
+  $(window).scroll(function(){
+    if($(window).scrollTop() + $('.navicon').height() > $(window).height()){
+      $('.navicon').addClass('active');
+    }
+    else{
+      $('.navicon').removeClass('active');
+    }
+  });
+</script>
