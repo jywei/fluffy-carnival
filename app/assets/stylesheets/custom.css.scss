@@ -18,6 +18,7 @@ html{-webkit-font-smoothing: antialiased;}
 body {
   margin: 0;
   background: #ffb3bf;
+  font-family: 'Lato' !important;
 }
 
 #cube{
@@ -969,7 +970,7 @@ body {
   > p {
     position: absolute;
     margin: 0;
-    top: 50%;
+    top: 60%;
     left: 50%;
     margin-right: -10%;
     transform: translate(-50%, -50%);
@@ -1353,4 +1354,8 @@ body {
 
 .gray {
   opacity: 0.5;
+}
+
+.product_row {
+  width: 300px;
 }
