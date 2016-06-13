@@ -328,10 +328,18 @@ body {
         top: 18px;
         right: 190px;
         text-decoration: none;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-size: 18px;
+        padding: 8px;
+        padding-right: 9.3px;
+        padding-left: 9.3px;
+        top: 20px;
         transition: .5s;
 
         &:hover {
           color: #7B7B7B;
+          background-color: white;
         }
       }
 
@@ -1257,12 +1265,6 @@ body {
   text-align: right;
   padding-right: 30px;
   line-height: 50px;
-}
-
-.jumbotron {
-  background: url('TiffanyBows1.jpg');
-  height: 300px;
-  background-size: cover;
 }
 
 .tag {
