@@ -548,7 +548,7 @@ body {
   }
 
   .watermark {
-    background: url('15611-01.png') no-repeat 50% 50%;
+    background: url('watermark-newFf.png') no-repeat 50% 50%;
     background-size: cover;
     position: absolute;
     transition: .5s;
@@ -557,7 +557,7 @@ body {
     height: 100%;
     opacity: 0;
     -webkit-transform: scale(1.4);
-    transform: scale(1.2);
+    transform: scale(1.4);
     top: 0;
   }
 
