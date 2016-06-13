@@ -288,6 +288,15 @@ body {
 }
 
 .iconbar{
+  .btn-default {
+    transition: .5s;
+  }
+
+  .btn-default:hover {
+    color: white;
+    background-color: #ffb3bf !important; 
+  }
+
   .bar-top,.bar-left,.bar-right,.bar-bottom {
     background-color: #ffb3bf;
     position: fixed;
