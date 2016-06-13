@@ -566,8 +566,8 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     top: 0;
   }
 
@@ -1489,9 +1489,12 @@ body {
     background-color: #f2f2f2;
   }
 
-  .nav-btn {
+  .addtocart {
     display: inline;
     padding: 10px;
+  }
+
+  .nav-btn {
     transition: .5s;
     margin-bottom: 10px;
     font-weight: 700;
