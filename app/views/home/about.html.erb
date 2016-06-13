@@ -172,4 +172,13 @@
       }
     });
   });
+
+  $(window).scroll(function(){
+    if(($(window).scrollTop() + $('.navicon').height() > $(window).height()) && (menutoggle == false)){
+      $('.navicon').addClass('active');
+    }
+    else{
+      $('.navicon').removeClass('active');
+    }
+  });
 </script>

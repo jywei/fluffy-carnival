@@ -53,7 +53,7 @@
                   <div class="col-md-6">
                     <%= image_tag("csegg.png", size: '120x120', class: "image") %>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 product_text">
                     <div class="box-wording">
                       <p>This is awesome. This is awesome. This is awesome.</p>
                       <h3>$500.00</h3>
@@ -66,7 +66,7 @@
                   <div class="col-md-6">
                     <%= image_tag("csegg.png", size: '120x120', class: "image") %>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 product_text">
                     <div class="box-wording">
                       <p>This is awesome. This is awesome. This is awesome.</p>
                       <h3>$500.00</h3>
@@ -79,7 +79,7 @@
                   <div class="col-md-6">
                     <%= image_tag("csegg.png", size: '120x120', class: "image") %>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 product_text">
                     <div class="box-wording">
                       <p>This is awesome. This is awesome. This is awesome.</p>
                       <h3>$500.00</h3>
@@ -217,7 +217,7 @@
     },1000);
   });
   $(window).scroll(function(){
-    if($(window).scrollTop() + $('.navicon').height() > $(window).height()){
+    if(($(window).scrollTop() + $('.navicon').height() > $(window).height()) && (menutoggle == false)){
       $('.navicon').addClass('active');
     }
     else{

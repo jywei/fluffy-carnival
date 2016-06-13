@@ -12,12 +12,16 @@
           <%= image_tag ('FELICE123-01.png'), size: '233x31' %>
         </div>
       </div>
-      <%= link_to "", "#", class:"fa fa-gift gift_icon" %>
+      <div class="footer-icon">
+        <%= link_to "https://www.google.com" do %>
+          <i class="fa fa-gift gift_icon fa-fw fa-lg"></i>
+        <% end %>
+      </div>
       <a href="#" class="signinbutton">
         Sign in
-          <span class="circle"></span>
-        <span class="leftborder"></span>
-        <span class="rightborder"></span>
+        <span class="circle"></span>
+        <!-- <span class="leftborder"></span>
+        <span class="rightborder"></span> -->
       </a>
     </div>
   </div>
@@ -25,21 +29,19 @@
   <div class="bar-right"></div>
   <div class="bar-bottom"></div>
 
-  <% if !current_page?(root_path) %>
-    <div class="menu-box">
-      <div class="menu-black-box"></div>
-      <div class="menu-list">
-        <%#= image_tag "watermark.png" ,class:"watermark" %>
-        <h2><%= link_to 'MAIN PAGE', root_path %></h2>
-        <h2><%= link_to 'ABOUT', about_path %></h2>
-        <h2><%= link_to 'JEWELRY','#' %></h2>
-        <h2><%= link_to 'GEM','#' %></h2>
-        <h2><%= link_to 'EMERALD','#' %></h2>
-        <h2><%= link_to 'CONTACTS',contact_path %></h2>
-      </div>
-      <div class="watermark"></div>
+  <div class="menu-box">
+    <div class="menu-list">
+      <%#= image_tag "watermark.png" ,class:"watermark" %>
+      <h2><%= link_to 'MAIN PAGE', root_path %></h2>
+      <h2><%= link_to 'ABOUT', about_path %></h2>
+      <h2><%= link_to 'JEWELRY', products_path %></h2>
+      <h2><%= link_to 'GEM','#' %></h2>
+      <h2><%= link_to 'EMERALD','#' %></h2>
+      <h2><%= link_to 'CONTACTS',contact_path %></h2>
     </div>
-  <% end %>
+    <div class="watermark"></div>
+    <div class="menu-pink-ball"></div>
+  </div>
 
 </div>
 
@@ -67,15 +69,21 @@
       $('.menu-box').show(0,function(){
         $('.menu-list').addClass('menu-list-active');
         $('.watermark').addClass('watermark-active');
-        $('.menu-black-box').addClass('menu-blackbox-active');
+        $('.menu-pink-ball').addClass('pink-ball-active');
+        $('.navicon').removeClass('active');
       });
     }
     else {
       menutoggle = false;
       $('.menu-list').removeClass('menu-list-active');
       $('.watermark').removeClass('watermark-active');
-      $('.menu-black-box').removeClass('menu-blackbox-active');
-      setTimeout(function(){$('.menu-box').hide(0);},500);
+      $('.menu-pink-ball').removeClass('pink-ball-active');
+      setTimeout(function(){
+        $('.menu-box').hide(0);
+        if($(window).scrollTop() + $('.navicon').height() > $(window).height()){
+          $('.navicon').addClass('active');
+        }
+      },1000);
     }
   });
 </script>

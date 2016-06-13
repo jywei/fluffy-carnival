@@ -321,6 +321,25 @@ body {
         cursor: pointer;
       }
 
+      .icon {
+        border: solid 2px #660000;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+        min-width: 40px;
+        height: 40px;
+        color: #660000;
+        text-decoration: none;
+        position: relative;
+        transition: .5s;
+
+        i:before {
+          z-index: 1;
+          position: relative;
+        }
+      }
+
       .gift_icon {
         color: white;
         font-size: 40px;
@@ -341,7 +360,7 @@ body {
         top: 20px;
         right: 50px;
         font-size: 20px;
-        border: solid 1px white;
+        /*border: solid 1px white;*/
         padding: 3px 19px;
         text-decoration: none;
         transition: .5s;
@@ -456,20 +475,21 @@ body {
     display: none;
   }
 
-  .menu-black-box {
-    transition: .5s;
-    background: black;
-    width: 100vw;
-    height: 100vh;
-    margin: 10px;
-    position: fixed;
-    /*visibility: hidden;*/
-    opacity: 0;
+  .menu-pink-ball {
+    background: #333333;
+    width: 300vw;
+    height: 300vw;
+    position: absolute;
+    top: -150vw;
+    left: -150vw;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: .5;
+    transition: 1s;
   }
 
-  .menu-blackbox-active {
-    visibility: visible;
-    opacity: 0.5;
+  .pink-ball-active {
+    transform: scale(1);
   }
 
   .menu-list {
@@ -507,20 +527,20 @@ body {
     text-decoration: none;
     padding-bottom: 5px;
     /*border-bottom: 3px solid #ff6666;*/
-    color: #ff3352;
+    /*color: #ff3352;*/
+    color: white;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     transition: .5s;
-    text-shadow:2px 2px 2px black;
     opacity: 1;
   }
 
   .menu-list > h2 > a:hover{
-    color: #ffb3bf;
+    color: #ff6666;
   }
 
   .watermark {
-    background: url('watermark-gray.png') no-repeat 50% 50%;
+    background: url('15611-01.png') no-repeat 50% 50%;
     background-size: cover;
     position: absolute;
     transition: .5s;
@@ -528,7 +548,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.4);
     transform: scale(1.2);
     top: 0;
   }
@@ -660,7 +680,7 @@ body {
   left: 0;
 
   .about_pic{
-    background: url('sleeping.jpg') no-repeat 50% 50%;
+    background: linear-gradient(to bottom, transparent 50%, black 100%), url('sleeping.jpg') no-repeat 50% 50%;
     background-size: cover;
     overflow: scroll;
     width: 100%;
@@ -1159,7 +1179,7 @@ body {
   height: 100vh;
   text-align: center;
   margin-bottom: 50px;
-  background: url('picture2.jpg');
+  background: linear-gradient(to bottom, transparent 50%, black 100%), url('picture2.jpg');
   background-size: cover;
 
   .big {
@@ -1305,6 +1325,16 @@ body {
   .box-wording > p {
     margin: 5px;
   }
+
+  .product_text {
+    text-align: center;
+    margin-left: -20px;
+    margin-top: 10px;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
 }
 
 .product-box:hover {
@@ -1364,4 +1394,55 @@ body {
 
 .product_row {
   width: 300px;
+}
+
+/*.footer-icon {
+  > li {
+    border-radius: 50%;
+    margin: 11px;
+  }
+
+  a {
+    &:before {
+      content: "";
+      background: #ff9999;
+      text-align: center;
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      transform: scale(0);
+      transition: .5s;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+    }
+
+    &:hover:before {
+      transform: scale(1);
+      z-index: 0;
+    }
+  }
+}*/
+
+
+.icon {
+  border: solid 2px #660000;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  min-width: 40px;
+  height: 40px;
+  color: #660000;
+  text-decoration: none;
+  position: relative;
+  transition: .5s;
+
+  i:before {
+    z-index: 1;
+    position: relative;
+  }
+}
+.icon:hover {
+  color: white;
 }
