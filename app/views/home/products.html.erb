@@ -47,11 +47,11 @@
           <div class="product-listing">
             <% 10.times do %>
               <div class="col-md-4 paddingzero product_big_box">
-                <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
+                <%= link_to(image_tag("csegg.png", size: '270x270', class: "image_big"), product_content_path) %>
                 <h3 class="center">$500.00</h3>
                 <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
                 <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-                <%= link_to "ADD TO CART", product_content_path, class: "btn btn-default nav-btn" %>
+                <%= link_to "ADD TO CART", '#', class: "btn btn-default nav-btn" %>
               </div>
             <% end %>
           </div>

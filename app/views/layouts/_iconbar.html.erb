@@ -1,5 +1,4 @@
 <div class="iconbar">
-
   <div class="bar-top">
     <!-- <p id="monitor" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p>
     <p id="monitorbottom" style="text-align:center;z-index:100;text-shadow:0 0 6px black;color:white;"></p>
@@ -11,16 +10,14 @@
         <div class="felice">
           <%= image_tag ('FELICE123-01.png'), size: '233x31' %>
         </div>
-
         <div class="row search-bar">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search for...">
             <div class="input-group-btn">
-              <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search search-btn"></i></button>
+              <button class="btn btn-default search-btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
             </div>
-          </div><!-- /input-group -->
-        </div><!-- /.row -->
-
+          </div>
+        </div>
       </div>
       <%= link_to "", "#", class: "fa fa-gift gift_icon" %>
       <a href="#" class="signinbutton">
@@ -34,7 +31,6 @@
   <div class="bar-left"></div>
   <div class="bar-right"></div>
   <div class="bar-bottom"></div>
-
   <div class="menu-box">
     <div class="menu-list">
       <h2><%= link_to 'MAIN PAGE', root_path %></h2>
@@ -47,7 +43,6 @@
     <div class="watermark"></div>
     <div class="menu-pink-ball"></div>
   </div>
-
 </div>
 
 <script type="text/javascript">
@@ -67,7 +62,11 @@
   // });
 
   // alert($(window).scrollTop());
-  var menutoggle = false
+  var menutoggle = false;
+  if( window.location.pathname === '/product_content' ){
+    $('.navicon').addClass('active');
+  };
+
   $('.felice').click(function(){
     if(menutoggle == false){
       menutoggle = true;
@@ -85,7 +84,7 @@
       $('.menu-pink-ball').removeClass('pink-ball-active');
       setTimeout(function(){
         $('.menu-box').hide(0);
-        if($(window).scrollTop() + $('.navicon').height() > $(window).height()){
+        if( $(window).scrollTop() + $('.navicon').height() > $(window).height() ){
           $('.navicon').addClass('active');
         }
       },1000);

@@ -288,13 +288,13 @@ body {
 }
 
 .iconbar{
-  .btn-default {
+  .search-btn {
     transition: .5s;
   }
 
-  .btn-default:hover {
+  .search-btn:hover {
     color: white;
-    background-color: #ffb3bf !important; 
+    background-color: #7B7B7B !important;
   }
 
   .bar-top,.bar-left,.bar-right,.bar-bottom {
@@ -1407,35 +1407,6 @@ body {
   width: 300px;
 }
 
-/*.footer-icon {
-  > li {
-    border-radius: 50%;
-    margin: 11px;
-  }
-
-  a {
-    &:before {
-      content: "";
-      background: #ff9999;
-      text-align: center;
-      position: absolute;
-      width: 36px;
-      height: 36px;
-      transform: scale(0);
-      transition: .5s;
-      top: 0;
-      left: 0;
-      border-radius: 50%;
-    }
-
-    &:hover:before {
-      transform: scale(1);
-      z-index: 0;
-    }
-  }
-}*/
-
-
 .icon {
   border: solid 2px #660000;
   border-radius: 50%;
@@ -1479,5 +1450,82 @@ body {
 
   .blank_space {
     padding-top: 100px;
+  }
+
+  .content-img > img {
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px #7B7B7B;
+  }
+
+  .content-img > img:hover {
+    opacity: 0.9;
+    box-shadow: 2px 2px 2px black;
+  }
+
+  .gray-text {
+    color: #444444;
+    display: inline;
+  }
+
+  .cross {
+    text-decoration: line-through;
+    color: #7B7B7B;
+  }
+
+  .price {
+    vertical-align: baseline;
+    margin-top: 10px 0;
+  }
+
+  .price-tag {
+    display: inline;
+  }
+
+  .product_number_field {
+    display: inline;
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+    background-color: #f2f2f2;
+  }
+
+  .nav-btn {
+    display: inline;
+    padding: 10px;
+    transition: .5s;
+    margin-bottom: 10px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #808080;
+    border-radius: 0px !important;
+    border-color: transparent;
+    margin: 10px;
+    box-shadow: 2px 2px 1px #cccccc;
+  }
+
+  .nav-btn:hover {
+    background-color: #8c8c8c !important;
+    color: white !important;
+    border-color: transparent;
+    box-shadow: 2px 2px 1px #333333;
+  }
+
+  .hr2 {
+  margin-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ffcccc;
+  }
+
+  .type {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .vendor {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 }
