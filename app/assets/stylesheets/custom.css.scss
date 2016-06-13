@@ -1453,14 +1453,26 @@ body {
     padding-top: 100px;
   }
 
-  .content-img > img {
-    margin-top: 20px;
-    box-shadow: 2px 2px 2px #7B7B7B;
+  .content-img img {
+      margin-top: 20px;
+      box-shadow: 2px 2px 2px #7B7B7B;
+      margin-bottom: 20px;
+      width:98%;
+      height:98%;
   }
 
-  .content-img > img:hover {
+  .content-img img:hover {
     opacity: 0.9;
     box-shadow: 2px 2px 2px black;
+  }
+
+  .content-nav {
+    width: 90%;
+    left: 5%;
+
+    .slick-prev:before, .slick-next:before {
+      color: #7b7b7b;
+    }
   }
 
   .gray-text {
