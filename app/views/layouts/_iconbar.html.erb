@@ -12,11 +12,7 @@
           <%= image_tag ('FELICE123-01.png'), size: '233x31' %>
         </div>
       </div>
-      <div class="footer-icon">
-        <%= link_to "https://www.google.com" do %>
-          <i class="fa fa-gift gift_icon fa-fw fa-lg"></i>
-        <% end %>
-      </div>
+      <%= link_to "", "#", class: "fa fa-gift gift_icon" %>
       <a href="#" class="signinbutton">
         Sign in
         <span class="circle"></span>
@@ -31,7 +27,6 @@
 
   <div class="menu-box">
     <div class="menu-list">
-      <%#= image_tag "watermark.png" ,class:"watermark" %>
       <h2><%= link_to 'MAIN PAGE', root_path %></h2>
       <h2><%= link_to 'ABOUT', about_path %></h2>
       <h2><%= link_to 'JEWELRY', products_path %></h2>

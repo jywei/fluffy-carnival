@@ -121,79 +121,15 @@
 
         <div class="row">
           <div class="product-listing">
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="product-listing">
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="product-listing">
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
-            <div class="col-md-4 paddingzero product_big_box">
-              <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
-              <h3 class="center">$500.00</h3>
-              <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-              <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
-            </div>
+            <% 10.times do %>
+              <div class="col-md-4 paddingzero product_big_box">
+                <%= image_tag("csegg.png", size: '270x270', class: "image_big") %>
+                <h3 class="center">$500.00</h3>
+                <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
+                <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
+                <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
+              </div>
+            <% end %>
           </div>
         </div>
 
