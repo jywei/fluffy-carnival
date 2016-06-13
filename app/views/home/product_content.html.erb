@@ -43,6 +43,20 @@
           </div>
 
         </div>
+        <div class="others product-listing">
+          <h4><strong>OTHER FINE PRODUCTS</strong></h4>
+        </div>
+        <div class="related-products product-listing">
+          <% 4.times do %>
+            <div class="col-md-3 paddingzero product_small_box">
+              <%= link_to(image_tag("csegg.png", size: '160x160', class: "image_small"), product_content_path) %>
+              <p class="price">
+                <h3 class="price-tag">$ 500.00 </h1>
+              <p/>
+              <p>This is awesome. This is awesome.</p>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
