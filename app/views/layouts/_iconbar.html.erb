@@ -62,11 +62,12 @@
   // });
 
   // alert($(window).scrollTop());
-  var menutoggle = false;
+
   if( window.location.pathname === '/product_content' ){
     $('.navicon').addClass('active');
   };
 
+  var menutoggle = false;
   $('.felice').click(function(){
     if(menutoggle == false){
       menutoggle = true;
@@ -84,9 +85,9 @@
       $('.menu-pink-ball').removeClass('pink-ball-active');
       setTimeout(function(){
         $('.menu-box').hide(0);
-        if( $(window).scrollTop() + $('.navicon').height() > $(window).height() ){
+        if( $(window).scrollTop() + $('.navicon').height() > $(window).height() || ( window.location.pathname === '/product_content' )){
           $('.navicon').addClass('active');
-        }
+        };
       },1000);
     }
   });
