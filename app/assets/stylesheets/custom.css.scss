@@ -368,7 +368,7 @@ body {
         top: 20px;
         right: 50px;
         font-size: 20px;
-        /*border: solid 1px white;*/
+        border: solid 1px transparent;
         padding: 3px 19px;
         text-decoration: none;
         transition: .5s;
@@ -410,20 +410,21 @@ body {
 
           .circle {
             overflow: hidden;
-            width: 95px;
+            width: 87px;
             height: 35px;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 5px;
             &:before {
               content: "";
-              background: #ffb3bf;
+              /*background: #ffb3bf;*/
+              background: white;
               width: 120px;
               height: 120px;
               border-radius: 50%;
               position: absolute;
               top: -41px;
-              left: -10px;
+              left: -17px;
               z-index: -1;
               transform: scale(0);
               opacity: 0;
@@ -492,7 +493,7 @@ body {
     left: -150vw;
     border-radius: 50%;
     transform: scale(0);
-    opacity: .5;
+    opacity: .8;
     transition: 1s;
   }
 
@@ -1226,7 +1227,6 @@ body {
   /*background: #ffe6ea;*/
   background: #ffb3bf;
   /*background: #ffffff;*/
-
 }
 
 .nav-btn {
@@ -1458,4 +1458,13 @@ body {
 
 .search-btn {
 
+}
+
+.contents {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffb3bf;
 }

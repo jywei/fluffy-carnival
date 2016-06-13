@@ -12,90 +12,14 @@
         </div>
       </div>
     </div>
-    <!-- <div class="jumbotron jumbotron-fluid">
-      <div class="container jumbo-pic">
-        <h1 class="display-3">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div> -->
   </div>
   <div class="container-fluid content">
     <div class="row">
-      <div class="col-md-4">
-        <!-- <br>
-        <br> -->
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <h3>COLLECTIONS</h3>
-            <ul class="nav nav-pills nav-stacked nav-btn" style="max-width: 300px;">
-              <li><a>Category 1</a></li>
-              <li><a>Category 2</a></li>
-              <li><a>Category 3</a></li>
-              <li><a>Category 4</a></li>
-              <li><a>Category 5</a></li>
-              <li><a>Category 6</a></li>
-            </ul>
-            <br>
-            <h3>PRODUCT TYPES</h3>
-            <ul class="nav nav-pills nav-stacked nav-btn" style="max-width: 300px;">
-              <li><a>Category 1</a></li>
-              <li><a>Category 2</a></li>
-              <li><a>Category 3</a></li>
-              <li><a>Category 4</a></li>
-              <li><a>Category 5</a></li>
-              <li><a>Category 6</a></li>
-            </ul>
-            <br>
-            <div class="product_row">
-              <h3>BEST SELLERS</h3>
-              <div class="product-box paddingzero">
-                <div class="row">
-                  <div class="col-md-6">
-                    <%= image_tag("csegg.png", size: '120x120', class: "image") %>
-                  </div>
-                  <div class="col-md-6 product_text">
-                    <div class="box-wording">
-                      <p>This is awesome. This is awesome. This is awesome.</p>
-                      <h3>$500.00</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-box paddingzero">
-                <div class="row">
-                  <div class="col-md-6">
-                    <%= image_tag("csegg.png", size: '120x120', class: "image") %>
-                  </div>
-                  <div class="col-md-6 product_text">
-                    <div class="box-wording">
-                      <p>This is awesome. This is awesome. This is awesome.</p>
-                      <h3>$500.00</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-box paddingzero">
-                <div class="row">
-                  <div class="col-md-6">
-                    <%= image_tag("csegg.png", size: '120x120', class: "image") %>
-                  </div>
-                  <div class="col-md-6 product_text">
-                    <div class="box-wording">
-                      <p>This is awesome. This is awesome. This is awesome.</p>
-                      <h3>$500.00</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-      </div>
+      <%= render 'layouts/left' %>
       <div class="col-md-8 product_holder">
         <div class="row">
           <div class="product-listing">
-            <h3 class="product-tag">PRODUCTS</h3>
+            <h3 class="product-tag"><strong>PRODUCTS</strong></h3>
           </div>
           <div class="tag product-listing">
             <p>
@@ -127,7 +51,7 @@
                 <h3 class="center">$500.00</h3>
                 <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
                 <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
-                <button type="button" class="btn btn-default nav-btn">ADD TO CART</button>
+                <%= link_to "ADD TO CART", product_content_path, class: "btn btn-default nav-btn" %>
               </div>
             <% end %>
           </div>

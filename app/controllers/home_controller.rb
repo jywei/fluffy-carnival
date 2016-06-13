@@ -11,4 +11,7 @@ class HomeController < ApplicationController
   def contacts
   end
 
+  def product_centent
+  end
+
 end
