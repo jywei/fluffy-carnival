@@ -345,7 +345,7 @@ body {
         font-size: 40px;
         position: absolute;
         top: 18px;
-        right: 190px;
+        right: 150px;
         text-decoration: none;
         border: 1px solid white;
         border-radius: 50%;
@@ -1447,4 +1447,15 @@ body {
 }
 .icon:hover {
   color: white;
+}
+
+.search-bar {
+  top: 15px;
+  left: 290px;
+  position: absolute;
+  width: 230px;
+}
+
+.search-btn {
+
 }

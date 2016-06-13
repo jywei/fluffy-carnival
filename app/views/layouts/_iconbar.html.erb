@@ -11,10 +11,20 @@
         <div class="felice">
           <%= image_tag ('FELICE123-01.png'), size: '233x31' %>
         </div>
+
+        <div class="row search-bar">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search search-btn"></i></button>
+            </div>
+          </div><!-- /input-group -->
+        </div><!-- /.row -->
+
       </div>
       <%= link_to "", "#", class: "fa fa-gift gift_icon" %>
       <a href="#" class="signinbutton">
-        Sign in
+        Sign In
         <span class="circle"></span>
         <!-- <span class="leftborder"></span>
         <span class="rightborder"></span> -->
