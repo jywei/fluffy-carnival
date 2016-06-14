@@ -1277,7 +1277,8 @@ body {
   top: 0;
   left: 0;
   /*background: #ffe6ea;*/
-  background: $main_color1;
+  /*background: #ffb3bf;*/
+  background: #ffe6e6;
   /*background: #ffffff;*/
 }
 
@@ -1300,7 +1301,7 @@ body {
   transition: .5s;
   margin-bottom: 10px;
   font-weight: 700;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-size: 14px;
   color: #808080;
   border-radius: 0px !important;
@@ -1356,7 +1357,7 @@ body {
     transition: .5s;
     margin-bottom: 10px;
     font-weight: 700;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     font-size: 14px;
     color: #808080;
     border-radius: 0px !important;
@@ -1505,7 +1506,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: $main_color1;
+  /*background: #ffb3bf;*/
+  background: #ffe6e6;
 
   .blank_space {
     padding-top: 100px;
@@ -1558,12 +1560,14 @@ body {
     width: 50px;
     height: 40px;
     background-color: #f2f2f2;
+    border-radius: 20%;
   }
 
-  .addtocart {
+  .col-md-7 > .addtocart {
     display: inline;
     padding: 10px;
     margin: 10px;
+    margin-left: 20px;
   }
 
   .nav-btn {
@@ -1751,7 +1755,7 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 61px;
+  margin-top: 70px;
   margin-left: -45px;
 }
 
@@ -1762,6 +1766,7 @@ input::-webkit-input-placeholder {
   color: #ffffff;
   background-color: #428bca;
   border-color: #357ebd;
+  border-radius: 50%;
   opacity: 1;
   padding: 10px 17px;
   font-size: 27px;
