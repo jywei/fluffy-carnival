@@ -324,7 +324,7 @@ body {
 
     .navicon {
       width: 100%;
-      height: 70px;
+      height: 60px;
       transition: .5s;
       /*background: $main_color1;*/
 
@@ -333,7 +333,7 @@ body {
         width: 280px;
         height: 70px;
         left: 10px;
-        top: 5px;
+        top: 0;
         position: fixed;
         cursor: pointer;
       }
@@ -357,18 +357,37 @@ body {
         }
       }
 
-      .searchicon {
-        top: 17px;
-        right: 30px;
+      .navicon {
         position: absolute;
-        border: solid 1px white;
+        top: 15px;
+        right: 30px;
+        border: solid 2px white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 6px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          background: white;
+          color: #7B7B7B;
+        }
+      }
+
+      .searchicon {
+        top: 15px;
+        right: 80px;
+        position: absolute;
+        border: solid 2px white;
         border-radius: 50%;
         color: white;
         text-decoration: none;
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 6px;
         transition: .5s;
 
         &:hover {
@@ -379,18 +398,18 @@ body {
 
       .gift_icon {
         color: white;
-        font-size: 40px;
         position: absolute;
-        top: 17px;
-        right: 90px;
+        top: 15px;
+        right: 130px;
         text-decoration: none;
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 50%;
         font-size: 18px;
-        padding: 8px;
-        padding-right: 9.3px;
-        padding-left: 9.3px;
         transition: .5s;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 5px;
 
         &:hover {
           color: #7B7B7B;
@@ -414,97 +433,23 @@ body {
       }
 
       .signinbutton {
-        color: white;
         position: absolute;
-        top: 17px;
-        right: 130px;
+        top: 15px;
+        right: 183px;
+        border: solid 2px white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color: white;
         font-size: 20px;
-        border: solid 1px transparent;
-        padding: 3px 19px;
+        padding-top: 3px;
         text-decoration: none;
         transition: .5s;
 
         &:hover {
           color: #7B7B7B;
-
-          /*.circle_holder {*/
-            .circle {
-              &:before {
-                transform: scale(1);
-                opacity: 1;
-                -webkit-transition: transform .5s cubic-bezier(.75,0,.25,1);
-                transition: transform .5s cubic-bezier(.75,0,.25,1);
-              }
-            }
-          /*}*/
-
-          .leftborder:before {
-            -moz-animation: arrowmoveleft .5s;
-            -webkit-animation: arrowmoveleft .5s;
-            animation: arrowmoveleft .5s;
-          }
-
-          .rightborder:before {
-            -moz-animation: arrowmoveright .5s;
-            -webkit-animation: arrowmoveright .5s;
-            animation: arrowmoveright .5s;
-          }
-        }
-
-        /*.circle_holder {
-          overflow: hidden;
-          width: 108px;
-          height: 39px;
-          position: absolute;
-          top: 0;
-          left: 0;*/
-
-          .circle {
-            overflow: hidden;
-            width: 87px;
-            height: 35px;
-            position: absolute;
-            top: 0;
-            left: 5px;
-            &:before {
-              content: "";
-              /*background: #ffb3bf;*/
-              background: white;
-              width: 120px;
-              height: 120px;
-              border-radius: 50%;
-              position: absolute;
-              top: -41px;
-              left: -17px;
-              z-index: -1;
-              transform: scale(0);
-              opacity: 0;
-              transition: opacity .25s cubic-bezier(.75,0,.25,1),-webkit-transform 10ms linear .5s,-moz-transform 10ms linear .5s,-o-transform 10ms linear .5s,transform 10ms linear .5s;
-            }
-          }
-        /*}*/
-
-        .leftborder:before, .rightborder:before {
-          background: white;
-          width: 22px;
-          height: 2px;
-          position: absolute;
-          content: "";
-          top: 50%;
-        }
-
-        .leftborder:before {
-          left: -12px;
-          -moz-animation: arrowmoveright .5s;
-          -webkit-animation: arrowmoveright .5s;
-          animation: arrowmoveright .5s;
-        }
-
-        .rightborder:before {
-          left: 85px;
-          -moz-animation: arrowmoveleft .5s;
-          -webkit-animation: arrowmoveleft .5s;
-          animation: arrowmoveleft .5s;
+          background-color: white;
         }
       }
     }
@@ -609,8 +554,8 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     top: 0;
   }
 
