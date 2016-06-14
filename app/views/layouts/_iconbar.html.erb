@@ -11,7 +11,7 @@
           <%= image_tag ('FELICE123-01.png'), size: '233x31' %>
         </div>
       </div>
-      <%= link_to "", "#", class: "glyphicon glyphicon-search searchicon" %>
+      <%= link_to "", "#search", class: "glyphicon glyphicon-search searchicon", id: "search-btn" %>
       <%= link_to "", "#", class: "fa fa-gift gift_icon" %>
       <a href="#" class="signinbutton">
         Sign In
@@ -36,6 +36,14 @@
     <div class="watermark"></div>
     <div class="menu-pink-ball"></div>
   </div>
+</div>
+
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary btn-lg">Search</button>
+    </form>
 </div>
 
 <script type="text/javascript">
@@ -83,5 +91,25 @@
         };
       },1000);
     }
+  });
+
+  $(function () {
+    $('#search-btn').on('click', function(event) {
+      event.preventDefault();
+      $('#search').addClass('open');
+      $('#search > form > input[type="search"]').focus();
+    });
+
+    $('#search, #search button.close').on('click keyup', function(event) {
+      if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+          $(this).removeClass('open');
+      }
+    });
+
+    //Do not include! This prevents the form from submitting for DEMO purposes only!
+    $('form').submit(function(event) {
+      event.preventDefault();
+      return false;
+    })
   });
 </script>
