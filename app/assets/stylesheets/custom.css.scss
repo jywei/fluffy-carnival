@@ -11,13 +11,16 @@
   font-style:normal;
 }
 
+$main_color1: #ffb3bf;
+$main_color2: #FF9797;
+
 ::-webkit-scrollbar{display:none;};
 
 html{-webkit-font-smoothing: antialiased;}
 
 body {
   margin: 0;
-  background: #ffb3bf;
+  background: $main_color1;
   font-family: 'Lato' !important;
 }
 
@@ -195,7 +198,7 @@ body {
 }
 
 .footer {
-  background: #ffb3bf;
+  background: $main_color1;
   height: 354px;
   width: 100vw;
   vertical-align: middle;
@@ -298,7 +301,7 @@ body {
   }
 
   .bar-top,.bar-left,.bar-right,.bar-bottom {
-    background-color: #ffb3bf;
+    background-color: $main_color1;
     position: fixed;
     z-index: 11;
   }
@@ -312,7 +315,11 @@ body {
     width: 100%;
 
     .active {
-      background: #FF9797;
+      background: $main_color2;
+    }
+
+    .active2 {
+      background: $main_color1;
     }
 
     .searchicon {
@@ -336,8 +343,9 @@ body {
 
     .navicon {
       width: 100%;
-      height: 80px;
+      height: 70px;
       transition: .5s;
+      /*background: $main_color1;*/
 
       .iconbutton{
         z-index: 100;
@@ -570,6 +578,7 @@ body {
     font-weight: 700;
     transition: .5s;
     opacity: 1;
+    text-shadow: 2px 2px 16px black;
   }
 
   .menu-list > h2 > a:hover{
@@ -591,7 +600,7 @@ body {
   }
 
   .watermark-active {
-    opacity: .4;
+    opacity: .2;
   }
 }
 
@@ -814,7 +823,7 @@ body {
 
   .pink_background {
     position: relative;
-    background: #ffb3bf;
+    background: $main_color1;
     overflow: hidden;
 
     .box_bottom_zero {
@@ -851,10 +860,10 @@ body {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%,-50%);
-  color: #ffb3bf;
+  color: $main_color1;
   font-size: 16px;
   font-weight: 500;
-  border: solid 1px #ffb3bf;
+  border: solid 1px $main_color1;
   padding: 11px 26px;
   cursor: pointer;
 
@@ -908,7 +917,7 @@ body {
     &:before{
       width: 1px;
       height: 22px;
-      background: #ffb3bf;
+      background: $main_color1;
       position: absolute;
       content: "";
     }
@@ -997,7 +1006,7 @@ body {
   height: auto;
   top: 0;
   left: 0;
-  background: #ffb3bf;
+  background: $main_color1;
 }
 
 .spacing {
@@ -1010,11 +1019,11 @@ body {
 }
 
 .map-frame {
-  margin-top: -10px;
+  margin-top: -20px;
 
   .map {
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     margin-top: 10vh;
   }
 }
@@ -1253,7 +1262,7 @@ body {
   top: 0;
   left: 0;
   /*background: #ffe6ea;*/
-  background: #ffb3bf;
+  background: $main_color1;
   /*background: #ffffff;*/
 }
 
@@ -1466,7 +1475,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: #ffb3bf;
+  background: $main_color1;
 
   .blank_space {
     padding-top: 100px;
