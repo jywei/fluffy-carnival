@@ -46,7 +46,12 @@
 
 
 <script>
+  fadeinli();
   $(window).scroll(function(){
+    fadeinli();
+  });
+
+  function fadeinli(){
     $('li').each(function(){
       if($(window).scrollTop() + $(window).height() > $(this).offset().top){
         $(this).addClass('active1');
@@ -58,5 +63,5 @@
         $(this).addClass('active');
       }
     });
-  });
+  }
 </script>

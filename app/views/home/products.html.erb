@@ -70,18 +70,14 @@
 </div>
 
 <script>
-  $(window).scroll(function(){
-    $('.product_big_box').each(function(){
-      if($(window).scrollTop() + $(window).height() > $(this).offset().top){
-        $(this).addClass('active');
-      }
-    });
-  });
   $('#findoutmore_button').click(function(){
     $('html,body').animate({
       scrollTop: $('.content').offset().top - $('.navicon').height()
     },1000);
   });
+
+  fadeinproduct();
+
   $(window).scroll(function(){
     if(($(window).scrollTop() + $('.navicon').height() > $(window).height()) && (menutoggle == false)){
       $('.navicon').addClass('active');
@@ -89,5 +85,15 @@
     else{
       $('.navicon').removeClass('active');
     }
+
+    fadeinproduct();
   });
+
+  function fadeinproduct(){
+    $('.product_big_box').each(function(){
+      if($(window).scrollTop() + $(window).height() > $(this).offset().top){
+        $(this).addClass('active');
+      }
+    });
+  }
 </script>
