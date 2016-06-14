@@ -44,7 +44,24 @@
   </form>
 </div>
 
+<div class="top">
+  <i class="fa fa-chevron-circle-up"></i>
+</div>
+
 <script type="text/javascript">
+  $(window).scroll(function(){
+    if( $(window).scrollTop() + $('.navicon').height() < $(window).height() ){
+      $('.top').hide(1000);
+    }
+    else {
+      $('.top').show(1000);
+    };
+  });
+
+  $('.top').click(function(){
+    $('html, body').animate({ scrollTop: 0 }, 1000);
+  });
+
   if( window.location.pathname === '/product_content' ){
     $('.navicon').addClass('active');
   };
