@@ -1253,8 +1253,8 @@ body {
   top: 0;
   left: 0;
   /*background: #ffe6ea;*/
-  background: #ffb3bf;
-  /*background: #ffffff;*/
+  /*background: #ffb3bf;*/
+  background: #ffe6e6;
 }
 
 .nav-btn {
@@ -1267,7 +1267,7 @@ body {
   transition: .5s;
   margin-bottom: 10px;
   font-weight: 700;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-size: 14px;
   color: #808080;
   border-radius: 0px !important;
@@ -1323,7 +1323,7 @@ body {
     transition: .5s;
     margin-bottom: 10px;
     font-weight: 700;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     font-size: 14px;
     color: #808080;
     border-radius: 0px !important;
@@ -1466,7 +1466,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: #ffb3bf;
+  /*background: #ffb3bf;*/
+  background: #ffe6e6;
 
   .blank_space {
     padding-top: 100px;
@@ -1519,12 +1520,14 @@ body {
     width: 50px;
     height: 40px;
     background-color: #f2f2f2;
+    border-radius: 20%;
   }
 
-  .addtocart {
+  .col-md-7 > .addtocart {
     display: inline;
     padding: 10px;
     margin: 10px;
+    margin-left: 20px;
   }
 
   .nav-btn {
