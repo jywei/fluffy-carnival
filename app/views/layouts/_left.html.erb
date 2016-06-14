@@ -43,3 +43,20 @@
   </div>
   <br>
 </div>
+
+
+<script>
+  $(window).scroll(function(){
+    $('li').each(function(){
+      if($(window).scrollTop() + $(window).height() > $(this).offset().top){
+        $(this).addClass('active1');
+      }
+    });
+
+    $('.product-box').each(function(){
+      if($(window).scrollTop() + $(window).height() > $(this).offset().top){
+        $(this).addClass('active');
+      }
+    });
+  });
+</script>

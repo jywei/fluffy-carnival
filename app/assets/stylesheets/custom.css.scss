@@ -322,25 +322,6 @@ body {
       background: $main_color1;
     }
 
-    .searchicon {
-      top: 20px;
-      right: 30px;
-      position: absolute;
-      border: solid 1px white;
-      border-radius: 50%;
-      color: white;
-      text-decoration: none;
-      width: 36px;
-      height: 36px;
-      text-align: center;
-      padding-top: 10px;
-      transition: .5s;
-      &:hover {
-        background: white;
-        color: #7B7B7B;
-      }
-    }
-
     .navicon {
       width: 100%;
       height: 70px;
@@ -376,11 +357,31 @@ body {
         }
       }
 
+      .searchicon {
+        top: 17px;
+        right: 30px;
+        position: absolute;
+        border: solid 1px white;
+        border-radius: 50%;
+        color: white;
+        text-decoration: none;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        padding-top: 10px;
+        transition: .5s;
+
+        &:hover {
+          background: white;
+          color: #7B7B7B;
+        }
+      }
+
       .gift_icon {
         color: white;
         font-size: 40px;
         position: absolute;
-        top: 18px;
+        top: 17px;
         right: 90px;
         text-decoration: none;
         border: 1px solid white;
@@ -389,19 +390,33 @@ body {
         padding: 8px;
         padding-right: 9.3px;
         padding-left: 9.3px;
-        top: 20px;
         transition: .5s;
 
         &:hover {
           color: #7B7B7B;
           background-color: white;
         }
+
+        .cartnumbers {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          background: #FF5151;
+          border-radius: 50%;
+          top: -5px;
+          right: -5px;
+          text-align: center;
+          font-size: 14px;
+          font-family: lato;
+          padding-top: 2px;
+          color: white;
+        }
       }
 
       .signinbutton {
         color: white;
         position: absolute;
-        top: 20px;
+        top: 17px;
         right: 130px;
         font-size: 20px;
         border: solid 1px transparent;
@@ -594,8 +609,8 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     top: 0;
   }
 
@@ -1270,6 +1285,15 @@ body {
   /*margin-left: 18px;*/
   margin-top: 20px;
   margin-right: 13px;
+
+  > li {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .active1 {
+    opacity: 1;
+  }
 }
 
 .nav-btn > li > a {
@@ -1357,6 +1381,8 @@ body {
   margin-top: 3px;
   transition: .5s;
   box-shadow: 2px 2px 1px #cccccc;
+  opacity: 0;
+  transition: 1s;
 
   .image {
     margin: 5px;
@@ -1434,6 +1460,10 @@ body {
 
 .product_row {
   width: 300px;
+
+  .active {
+    opacity: 1;
+  }
 }
 
 /*.icon {

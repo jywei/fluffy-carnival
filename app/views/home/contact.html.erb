@@ -21,7 +21,14 @@
 </div>
 
 <script language="javascript" type="text/javascript">
-  $('.navicon').addClass('active2');
+  $('.felice').click(function(){
+    if(menutoggle == false){
+      $('.navicon').addClass('active2');
+    }
+    else {
+      $('.navicon').removeClass('active2');
+    }
+  });
 
   function initMap() {
     var styles = [

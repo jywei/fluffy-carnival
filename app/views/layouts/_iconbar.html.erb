@@ -12,7 +12,9 @@
         </div>
       </div>
       <%= link_to "", "#search", class: "glyphicon glyphicon-search searchicon", id: "search-btn" %>
-      <%= link_to "", "#", class: "fa fa-gift gift_icon" %>
+      <%= link_to "#", class: "fa fa-gift gift_icon" do %>
+        <div class="cartnumbers">22</div>
+      <% end %>
       <a href="#" class="signinbutton">
         Sign In
         <span class="circle"></span>
