@@ -1726,3 +1726,24 @@ input::-webkit-input-placeholder {
   font-size: 40px;
   text-shadow: 1px 1px 1px #333333;
 }
+
+.dropdown .drop-right {
+  top: 55px;
+  right: 9px;
+  left: auto !important;
+}
+
+.drop-panel {
+  background-color: black !important;
+  opacity: 0.8;
+  font-size: 20px !important;
+  width: 225px;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  color: #333333 !important;
+}
