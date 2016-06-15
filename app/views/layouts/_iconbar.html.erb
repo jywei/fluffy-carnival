@@ -85,34 +85,32 @@
     $('.navicon').addClass('active');
   };
 
-  if( window.location.pathname === '/contact' ){
-    $('.top').hide();
-  };
-
   var menutoggle = false;
-  $('.felice').click(function(){
-    if(menutoggle == false){
-      menutoggle = true;
-      $('.menu-box').show(0,function(){
-        $('.menu-list').addClass('menu-list-active');
-        $('.watermark').addClass('watermark-active');
-        $('.menu-pink-ball').addClass('pink-ball-active');
-        $('.navicon').removeClass('active');
-      });
-    }
-    else {
-      menutoggle = false;
-      $('.menu-list').removeClass('menu-list-active');
-      $('.watermark').removeClass('watermark-active');
-      $('.menu-pink-ball').removeClass('pink-ball-active');
-      setTimeout(function(){
-        $('.menu-box').hide(0);
-        if( $(window).scrollTop() + $('.navicon').height() > $(window).height() || ( window.location.pathname === '/product_content' || window.location.pathname === '/notices' || window.location.pathname === '/my_account' || window.location.pathname === '/cart' || window.location.pathname === '/checkout/address_new' || window.location.pathname === '/checkout/payment')){
-          $('.navicon').addClass('active');
-        };
-      },1000);
-    }
-  });
+  if ( window.location.pathname !== '/') {
+    $('.felice').click(function(){
+      if(menutoggle == false){
+        menutoggle = true;
+        $('.menu-box').show(0,function(){
+          $('.menu-list').addClass('menu-list-active');
+          $('.watermark').addClass('watermark-active');
+          $('.menu-pink-ball').addClass('pink-ball-active');
+          $('.navicon').removeClass('active');
+        });
+      }
+      else {
+        menutoggle = false;
+        $('.menu-list').removeClass('menu-list-active');
+        $('.watermark').removeClass('watermark-active');
+        $('.menu-pink-ball').removeClass('pink-ball-active');
+        setTimeout(function(){
+          $('.menu-box').hide(0);
+          if( $(window).scrollTop() + $('.navicon').height() > $(window).height() || ( window.location.pathname === '/product_content' || window.location.pathname === '/notices' || window.location.pathname === '/my_account' || window.location.pathname === '/cart' || window.location.pathname === '/checkout/address_new' || window.location.pathname === '/checkout/payment')){
+            $('.navicon').addClass('active');
+          };
+        },1000);
+      }
+    });
+  };
 
   $(function () {
     $('#search-btn').on('click', function(event) {
