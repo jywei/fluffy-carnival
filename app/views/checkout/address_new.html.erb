@@ -1,0 +1,51 @@
+<div class="checkout">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="title1">
+        <h1 class="big">Consignees - 送貨資訊</h1>
+      </div>
+      <div class="float_area">
+        <div class="wording">
+          <div class='account_history'>
+            <div class="row">
+              <div class="col-md-offset-1 col-md-10">
+                <table class="table table-hover">
+                  <tr class="form-group">
+                    <td width="300" class="input_tag">姓名</td>
+                    <td><input type="text" name="Name" placeholder="Michael Fassbender" class="input_field form-control"></td>
+                  </tr>
+                  <tr class="form-group">
+                    <td width="300" class="input_tag">性別</td>
+                    <td><input type="text" name="Gender" placeholder="Male" class="input_field form-control"></td>
+                  </tr>
+                  <tr class="form-group">
+                    <td width="300" class="input_tag">縣市</td>
+                    <td><input type="text" name="City" placeholder="NYC" class="input_field form-control"></td>
+                  </tr>
+                  <tr class="form-group">
+                    <td width="300" class="input_tag">鄉鎮市區</td>
+                    <td><input type="text" name="District" placeholder="Brooklyn" class="input_field form-control"></td>
+                  </tr>
+                  <tr class="form-group">
+                    <td width="300" class="input_tag">地址</td>
+                    <td><input type="text" name="Address" placeholder="Your Mama's Basement" class="input_field form-control"></td>
+                  </tr>
+                  <tr class="form-group">
+                    <td width="300" class="input_tag">手機</td>
+                    <td><input type="text" name="Phone" placeholder="0987654321" class="input_field form-control"></td>
+                  </tr>
+                </table>
+                <hr>
+                <div class="buttons">
+                  <%= link_to "Next Step", "#", class: "btn btn-default nav-btn1" %>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render "layouts/footer" %>
+</div>
