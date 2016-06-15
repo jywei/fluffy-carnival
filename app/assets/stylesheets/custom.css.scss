@@ -1789,3 +1789,105 @@ input::-webkit-input-placeholder {
 .dropdown-item:hover {
   color: #333333 !important;
 }
+
+.notices {
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ffe6e6;
+
+  .big {
+    margin: 100px auto 50px auto;
+    max-width: 40%;
+    text-align: center;
+    color: #333333;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Lato';
+  }
+
+  .float_area {
+    padding: 20px;
+    box-shadow: 0px 1px 22px rgba(28, 28, 28, 0.4);
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 50px auto !important;
+    position: relative;
+    width: 80%;
+    min-height: 400px;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lato';
+
+    .wording {
+      text-align: justify;
+    }
+  }
+}
+
+.my_account {
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ffe6e6;
+
+  .big {
+    margin: 100px auto 50px auto;
+    max-width: 50%;
+    text-align: center;
+    color: #333333;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Lato';
+  }
+
+  .float_area {
+    padding: 20px;
+    box-shadow: 0px 1px 22px rgba(28, 28, 28, 0.4);
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 50px auto !important;
+    position: relative;
+    width: 80%;
+    min-height: 300px;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lato';
+
+    .wording {
+      text-align: justify;
+    }
+  }
+
+  .buttons {
+    display: block;
+    text-align: center;
+
+    .nav-btn1 {
+      transition: .5s;
+      margin-bottom: 10px;
+      font-weight: 700;
+      background-color: #f2f2f2;
+      font-size: 20px;
+      color: #808080;
+      border-radius: 0px !important;
+      border-color: transparent;
+      margin: 0 auto;
+      box-shadow: 2px 2px 1px #cccccc;
+      display: inline-block;
+    }
+
+    .nav-btn1:hover {
+      background-color: #8c8c8c !important;
+      color: white !important;
+      border-color: transparent;
+      box-shadow: 2px 2px 1px #333333;
+    }
+  }
+}

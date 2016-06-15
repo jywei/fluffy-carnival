@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
   get "product_content" => 'home#product_content'
 
+  get "notices" => 'home#notices'
+
+  get "my_account" => 'home#my_account'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
