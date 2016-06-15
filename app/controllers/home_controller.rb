@@ -15,4 +15,7 @@ class HomeController < ApplicationController
   def notices
   end
 
+  def my_account
+  end
+
 end

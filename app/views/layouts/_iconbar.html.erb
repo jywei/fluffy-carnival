@@ -61,14 +61,18 @@
 
 <script type="text/javascript">
 
-  $('.dropdown-toggle').dropdown()
+  $('.dropdown-toggle').dropdown();
+
+  if( $(window).scrollTop() + $('.navicon').height() < $(window).height() ){
+    $('.top').hide();
+  };
 
   $(window).scroll(function(){
-    if( $(window).scrollTop() + $('.navicon').height() < $(window).height() ){
-      $('.top').hide(1000);
+    if( $(window).scrollTop() + $('.navicon').height() > $(window).height() ){
+      $('.top').show(1000);
     }
     else {
-      $('.top').show(1000);
+      $('.top').hide(1000);
     };
   });
 
@@ -76,7 +80,7 @@
     $('html, body').animate({ scrollTop: 0 }, 1000);
   });
 
-  if( window.location.pathname === '/product_content' ){
+  if( window.location.pathname === '/product_content' || window.location.pathname === '/notices'){
     $('.navicon').addClass('active');
   };
 
