@@ -21,7 +21,7 @@
       <div class="dropdown">
         <%= link_to "", "#", id: "dLabel", class: "fa fa-navicon navicon dropdown-toggle", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
           <ul class="dropdown-menu drop-right drop-panel" aria-labelledby="dLabel">
-            <li><%= link_to "My Account", "#", class: "dropdown-item" %></li>
+            <li><%= link_to "My Account", my_account_path, class: "dropdown-item" %></li>
             <li><%= link_to "Change Password", "#", class: "dropdown-item" %></li>
             <li><%= link_to "Edit Profile", "#", class: "dropdown-item" %></li>
             <li><%= link_to "FAQ", notices_path, class: "dropdown-item" %></li>
@@ -80,7 +80,7 @@
     $('html, body').animate({ scrollTop: 0 }, 1000);
   });
 
-  if( window.location.pathname === '/product_content' || window.location.pathname === '/notices'){
+  if( window.location.pathname === '/product_content' || window.location.pathname === '/notices' || window.location.pathname === '/my_account'){
     $('.navicon').addClass('active');
   };
 
