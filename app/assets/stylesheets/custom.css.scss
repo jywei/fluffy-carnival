@@ -1988,6 +1988,14 @@ input::-webkit-input-placeholder {
     .wording {
       text-align: justify;
 
+      .table-title {
+        text-align: center;
+        display: block;
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: 25px;
+      }
+
       .input_tag {
         padding-top: 30px;
       }
@@ -1995,6 +2003,42 @@ input::-webkit-input-placeholder {
       .input_field {
         width: 550px;
         margin: 20px;
+      }
+    }
+  }
+
+  .float_area_1 {
+    padding: 20px;
+    box-shadow: 0px 1px 22px rgba(28, 28, 28, 0.4);
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 50px auto !important;
+    position: relative;
+    width: 50%;
+    min-height: 300px;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lato';
+
+    .wording {
+      text-align: justify;
+
+      .table-title {
+        text-align: center;
+        display: block;
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: 25px;
+      }
+
+      .input_tag {
+        padding-top: 10px;
+        padding-left: 30px;
+      }
+
+      .click {
+        padding-left: 0px;
       }
     }
   }
