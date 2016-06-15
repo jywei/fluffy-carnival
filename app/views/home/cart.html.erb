@@ -1,3 +1,51 @@
 <div class="cart">
-  <%= render 'layouts/footer' %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="title1">
+        <h1 class="big">My Shopping Cart</h1>
+      </div>
+      <div class="float_area">
+        <div class='account_history'>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>商品</th>
+                <th>規格</th>
+                <th>名稱</th>
+                <th>數量</th>
+                <th>單價</th>
+                <th>刪除</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% 10.times do %>
+              <tr>
+                <td><%= image_tag("demo.jpg", size: '90x90', class: "image_big") %></td>
+                <td>Green</td>
+                <td>10k Gold and Diamond Three...</td>
+                <td>1</td>
+                <td>$500</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+              </tr>
+              <% end %>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4" align="right"><strong>總價</strong></td>
+                <td colspan="2" align="right">$5000</td>
+              </tr>
+            </tfoot>
+          </table>
+          <table class="cart_control buttons">
+            <tr>
+              <td><%= link_to "Empty My Shopping Cart", "#", class: "btn btn-default nav-btn1" %></td>
+              <td><%= link_to "Back To The Shop", "#", class: "btn btn-default nav-btn1" %></td>
+              <td><%= link_to "Checkout", "#", class: "btn btn-default nav-btn1" %></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render "layouts/footer" %>
 </div>
