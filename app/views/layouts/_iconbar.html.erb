@@ -17,7 +17,17 @@
         <div class="cartnumbers">22</div>
       <% end %>
       <%= link_to "", "#", class: "glyphicon glyphicon-search searchicon", id: "search-btn" %>
-      <%= link_to "", "#", class: "fa fa-navicon navicon" %>
+
+      <div class="dropdown">
+        <%= link_to "", "#", id: "dLabel", class: "fa fa-navicon navicon dropdown-toggle", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
+          <ul class="dropdown-menu drop-right drop-panel" aria-labelledby="dLabel">
+            <li><a class="dropdown-item" href="#1">My Account</a></li>
+            <li><a class="dropdown-item" href="#2">Change Password</a></li>
+            <li><a class="dropdown-item" href="#3">Edit Profile</a></li>
+            <li><a class="dropdown-item" href="#4">FAQ</a></li>
+          </ul>
+      </div>
+
     </div>
   </div>
   <div class="bar-left"></div>
@@ -50,6 +60,9 @@
 </div>
 
 <script type="text/javascript">
+
+  $('.dropdown-toggle').dropdown()
+
   $(window).scroll(function(){
     if( $(window).scrollTop() + $('.navicon').height() < $(window).height() ){
       $('.top').hide(1000);
@@ -65,6 +78,10 @@
 
   if( window.location.pathname === '/product_content' ){
     $('.navicon').addClass('active');
+  };
+
+  if( window.location.pathname === '/contact' ){
+    $('.top').hide();
   };
 
   var menutoggle = false;
