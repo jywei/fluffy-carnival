@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get "my_account" => 'home#my_account'
 
+  get "cart" => 'home#cart'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
