@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'devise', '~> 3.5', '>= 3.5.6'
+
 gem 'font-awesome-sass'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'

@@ -432,6 +432,27 @@ body {
         }
       }
 
+      .signupbutton {
+        position: absolute;
+        top: 15px;
+        right: 292px;
+        border: solid 2px white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 3px;
+        text-decoration: none;
+        transition: .5s;
+
+        &:hover {
+          color: #7B7B7B;
+          background-color: white;
+        }
+      }
+
       .signinbutton {
         position: absolute;
         top: 15px;
