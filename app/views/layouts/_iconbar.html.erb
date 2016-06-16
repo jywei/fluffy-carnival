@@ -104,7 +104,7 @@
         $('.menu-pink-ball').removeClass('pink-ball-active');
         setTimeout(function(){
           $('.menu-box').hide(0);
-          if( $(window).scrollTop() + $('.navicon').height() > $(window).height() || ( window.location.pathname === '/product_content' || window.location.pathname === '/notices' || window.location.pathname === '/my_account' || window.location.pathname === '/cart' || window.location.pathname === '/checkout/address_new' || window.location.pathname === '/checkout/payment')){
+          if( $(window).scrollTop() + $('.navicon').height() > $(window).height() || ( window.location.pathname === '/product_content' || window.location.pathname === '/notices' || window.location.pathname === '/my_account' || window.location.pathname === '/cart' || window.location.pathname === '/checkout/address_new' || window.location.pathname === '/checkout/payment' || window.location.pathname === '/users/sign_up' || window.location.pathname === '/users/sign_in')){
             $('.navicon').addClass('active');
           };
         },1000);

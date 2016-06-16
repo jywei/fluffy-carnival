@@ -1880,48 +1880,34 @@ input::-webkit-input-placeholder {
   background: $julia_background;
 
   .signupform {
-    text-align: center;
-    background: $julia_background;
-    padding: 40px 0;
-    box-shadow: 0px 1px 22px rgba(28, 28, 28, 0.4);
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin: 0 auto 110px auto;
-    position: relative;
-    max-width: 1000px;
-    min-height: 100px;
-    opacity: 0.8;
+    top: 20vh;
+    max-width: 800px;
+    margin-bottom: 300px;
     font-size: 20px;
     font-weight: 300;
     font-family: 'Lato';
 
-    td {
-      padding: 0;
-      padding-top: 16px;
-    }
-
     .signtitle {
       margin-bottom: 40px;
 
-      > h2 {
-        font-size: 50px;
-        display: inline;
-      }
-
       > h3 {
         display: inline;
+        font-weight: 900;
       }
     }
 
-    .field {
-      input {
-        &:focus {
-          transform: scale(1.05);
-        }
-      }
+    table {
+      max-width: 600px;
+      margin: 0 auto;
 
-      label {
-        text-shadow: 2px 2px 2px wheat;
+      td {
+        padding: 0;
+        padding-top: 16px;
+        width: 30%;
+
+        label {
+          font-weight: 100;
+        }
       }
     }
 
@@ -1959,23 +1945,32 @@ input::-webkit-input-placeholder {
   background: $julia_background;
 
   .signinform {
+    top: 20vh;
+    margin-bottom: 300px;
     font-size: 20px;
     font-weight: 300;
     font-family: 'Lato';
 
     .signintitle {
       margin-bottom: 40px;
+
+      h3 {
+        font-weight: 900;
+      }
     }
 
-    .field {
-      input {
-        &:focus {
-          transform: scale(1.05);
-        }
-      }
+    table {
+      max-width: 500px;
+      margin: 0 auto;
 
-      label {
-        text-shadow: 2px 2px 2px wheat;
+      td {
+        padding: 0;
+        padding-top: 16px;
+        width: 30%;
+
+        label {
+          font-weight: 100;
+        }
       }
     }
 
@@ -2197,7 +2192,7 @@ input::-webkit-input-placeholder {
   box-shadow: 0px 1px 22px rgba(28, 28, 28, 0.4);
   background-color: #ffffff;
   border-radius: 8px;
-  margin: 0 auto 110px auto;
+  margin: 0 auto 0 auto;
   position: relative;
   max-width: 600px;
   min-height: 100px;
