@@ -1,0 +1,46 @@
+<div class="checkout">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="title1">
+        <h1 class="big">Payment</h1>
+      </div>
+      <div class="float_area_1">
+        <div class="wording">
+          <div class='account_history'>
+            <div class="row">
+              <div class="col-md-offset-2 col-md-8">
+                <div>
+                  <p class="table-title">請選擇付款方式</th>
+                </div>
+                <table class="table table-hover form-group">
+                  <tbody>
+                    <form>
+                      <tr>
+                        <td width="300" class="input_tag">Credit Card</td>
+                        <td class="click"><input type="radio" name="payment" value="credit"></td>
+                      </tr>
+                      <tr>
+                        <td width="300" class="input_tag">ATM</td>
+                        <td class="click"><input type="radio" name="payment" value="atm"></td>
+                      </tr>
+                      <tr>
+                        <td width="300" class="input_tag">7-11</td>
+                        <td class="click"><input type="radio" name="payment" value="711"></td>
+                      </tr>
+                    </form>
+                  </tbody>
+                </table>
+                <br>
+                <div class="buttons">
+                  <%= link_to "Next Step", checkout_payment_path, class: "btn btn-default nav-btn1" %>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render "layouts/footer" %>
+</div>

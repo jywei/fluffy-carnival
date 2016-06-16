@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  get 'checkout/address_new'
+
+  get 'checkout/payment'
+
   devise_for :users
 
   root 'home#index'
+
   get "about" => 'home#about'
 
   get "contact" => 'home#contact'
@@ -13,6 +18,8 @@ Rails.application.routes.draw do
   get "notices" => 'home#notices'
 
   get "my_account" => 'home#my_account'
+
+  get "cart" => 'home#cart'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,31 +1,73 @@
 <div class="signup">
-  <h2>Sign up</h2>
-
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
-
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+  <div class="container-fluid">
+    <div class="big">
+      <h2>Sign Up </h2>
     </div>
 
-    <div class="field">
-      <%= f.label :password %>
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-    </div>
+    <div class="signupform">
+      <div class="signtitle">
+        <h3>加入會員</h3>
+      </div>
 
-    <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
-    </div>
+      <table class="table table-hover form-group">
+        <tbody>
+          <tr>
+            <td><label>E-mail</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
 
-    <div class="actions">
-      <%= f.submit "Sign up" %>
-    </div>
-  <% end %>
+          <tr>
+            <td><label>密碼</label></td>
+            <td><input class="julia_form" autocomplete="off"></td>
+          </tr>
 
-  <%= render "devise/shared/links" %>
+          <tr>
+            <td><label>確認密碼</label></td>
+            <td><input class="julia_form" autocomplete="off"></td>
+          </tr>
+
+          <tr>
+            <td><label>姓名</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+
+          <tr>
+            <td><label>性別</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+
+          <tr>
+            <td><label>生日</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+
+          <tr>
+            <td><label>縣市</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+
+          <tr>
+            <td><label>鄉鎮市區</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+
+          <tr>
+            <td><label>地址</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+
+          <tr>
+            <td><label>手機</label></td>
+            <td><input class="julia_form"></td>
+          </tr>
+        </tbody>
+      </table>
+
+        <div class="actions">
+          <%= link_to "Sign up", '#' %>
+        </div>
+
+    </div>
+  </div>
+  <%= render "layouts/footer" %>
 </div>

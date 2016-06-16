@@ -18,4 +18,7 @@ class HomeController < ApplicationController
   def my_account
   end
 
+  def cart
+  end
+
 end

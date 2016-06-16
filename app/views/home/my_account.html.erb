@@ -1,47 +1,46 @@
 <div class="my_account">
-  <%= render 'layouts/iconbar' %>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="title1">
-          <h1 class="big">Account Setting & Purchase History</h1>
-        </div>
-        <span class="buttons">
-          <%= link_to "Change Password", "#", class: "btn btn-default nav-btn1" %>
-          <%= link_to "Edit Profile", "#", class: "btn btn-default nav-btn1" %>
-        </div>
-        <div class="float_area">
-          <div class="wording">
-            <div class='account_history'>
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>產品編號</th>
-                    <th>產品名稱</th>
-                    <th>產品規格</th>
-                    <th>售價</th>
-                    <th>數量</th>
-                    <th>日期</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><%= image_tag("demo.jpg", size: '90x90', class: "image_big") %></td>
-                    <td>1</td>
-                    <td>10k Gold...</td>
-                    <td>Green</td>
-                    <td>$500</td>
-                    <td>1</td>
-                    <td>15 Jun 12:37</td>
-                    <td>已付款</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="title1">
+        <h1 class="big">Account Setting & Purchase History</h1>
+      </div>
+      <div class="buttons">
+        <%= link_to "Change Password", "#", class: "btn btn-default nav-btn1" %>
+        <%= link_to "Edit Profile", "#", class: "btn btn-default nav-btn1" %>
+      </div>
+      <div class="float_area">
+        <div class="wording">
+          <div class='account_history'>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>產品編號</th>
+                  <th>產品名稱</th>
+                  <th>產品規格</th>
+                  <th>售價</th>
+                  <th>數量</th>
+                  <th>日期</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><%= image_tag("demo.jpg", size: '90x90', class: "image_big") %></td>
+                  <td>1</td>
+                  <td>10k Gold...</td>
+                  <td>Green</td>
+                  <td>$500</td>
+                  <td>1</td>
+                  <td>15 Jun 12:37</td>
+                  <td>已付款</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
+  </div>
   <%= render "layouts/footer" %>
 </div>
