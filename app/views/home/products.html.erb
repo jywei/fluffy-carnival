@@ -1,3 +1,12 @@
+<script>
+  $(document).ready(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn",
+      threshold : 500
+    });
+  });
+</script>
+
 <div class="products">
   <div class="row">
     <div class="title">
@@ -51,7 +60,10 @@
           <div class="product-listing">
             <% 10.times do %>
               <div class="col-md-4 paddingzero product_big_box">
-                <%= link_to(image_tag("demo.jpg", size: '270x270', class: "image_big"), product_content_path) %>
+                <%#= link_to(image_tag("demo.jpg", size: '270x270', class: "image_big"), product_content_path) %>
+                <%#= link_to(image_tag("demo1.jpg", size: '270x270', class: "image_big"), product_content_path) %>
+                <%= link_to(image_tag(asset_path('loading.gif'), :class=>'lazy product_img', size: '270x270', :data => {:original => "assets/demo.jpg"}), product_content_path) %>
+                <%= link_to(image_tag(asset_path('loading.gif'), :class=>'fadeImage lazy product_img', size: '270x270', :data => {:original => "assets/demo1.jpg"}), product_content_path) %>
                 <h3 class="center">$500.00</h3>
                 <p class="center">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
                 <p class="center gray">10k Gold and Diamond Three-Stone Heart Pendant Necklace</p>
@@ -95,4 +107,18 @@
       }
     });
   }
+
+  $(document).on('mouseenter', '.product_big_box img', function() {
+    var first = $(this).eq(1);
+    var last = $(this).eq(0);
+    $(first).stop().animate({'opacity': 0}, 500);
+    $(last).stop().animate({'opacity': 1}, 500);
+  });
+
+  $(document).on('mouseleave', '.product_big_box img', function() {
+    var first = $(this).eq(1);
+    var last = $(this).eq(0);
+    $(last).stop().animate({'opacity': 0}, 500);
+    $(first).stop().animate({'opacity': 1}, 500);
+  });
 </script>
