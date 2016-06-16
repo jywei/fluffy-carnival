@@ -126,7 +126,7 @@ body {
     }
 
     .jewelry_pic {
-      left: 3px;
+      left: 5px;
     }
 
     .style_pic {
@@ -1027,8 +1027,9 @@ body {
 
   .map {
     width: 100%;
-    height: 93vh;
-    margin-top: 10vh;
+    height: 90vh;
+    margin-top: 13vh;
+    /*margin-bottom: 10px;*/
   }
 }
 
@@ -1224,41 +1225,6 @@ body {
        filter:alpha(opacity=100)}
 }
 
-.title {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  margin-bottom: 50px;
-  background: linear-gradient(to bottom, transparent 50%, black 100%), url('picture2.jpg');
-  background-size: cover;
-
-  .big {
-    position: absolute;
-    margin: 0;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-    font-family: 'Lato';
-  }
-
-  .small {
-    position: absolute;
-    margin: 0;
-    top: 46%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Lato';
-  }
-}
-
 .products {
   overflow: hidden;
   width: 100vw;
@@ -1269,6 +1235,41 @@ body {
   /*background: #ffb3bf;*/
   background: $julia_background;
   /*background: #ffffff;*/
+
+  .title {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom, transparent 50%, black 100%), url('picture2.jpg');
+    background-size: cover;
+
+    .big {
+      position: absolute;
+      margin: 0;
+      top: 40%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 60px;
+      font-weight: 700;
+      font-family: 'Lato';
+    }
+
+    .small {
+      position: absolute;
+      margin: 0;
+      top: 46%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: 'Lato';
+    }
+  }
 }
 
 .nav-btn {
@@ -2211,4 +2212,11 @@ input::-webkit-input-placeholder {
   font-size: 40px;
   font-weight: 300;
   font-family: 'Lato';
+}
+
+.fadeImage{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
