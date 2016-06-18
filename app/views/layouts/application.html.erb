@@ -12,7 +12,9 @@
 
 <%= yield %>
 
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+<% if current_page?('/contact') %>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+<% end %>
 
 </body>
 </html>
